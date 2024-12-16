@@ -5,6 +5,7 @@
 // achten, dass die entsprechenden Schreibrechte auf dem
 // Webserver gesetzt sind.
 # Version 1.1 2024-01-03
+
 $body = $_POST;
 $mac = $_POST["mac"];
 $machine = $_POST["machine"];
@@ -38,8 +39,8 @@ if (fnmatch("go2m.eu/*",($agent)))
   {
     echo "agent ok\n";
 	# Counterdateiname
-	$datei="$app_name.txt";
-    #$datei="data/$app_name.txt";
+	#$datei="$app_name.txt";
+  $datei="./data/$app_name.txt";
       // Anzahl der fÃ¼hrenden Nullen
       $stellen = 10;
       if(file_exists($datei))
