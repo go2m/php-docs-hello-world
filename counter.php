@@ -29,6 +29,7 @@ echo "app : $app_name\n";
 echo "ip  : $ip\n";
 #*/
 #
+/*
 // Counterdateiname
 $agent = $_SERVER["HTTP_USER_AGENT"];
 echo "user-Agent : $agent\n";
@@ -40,5 +41,5 @@ if (fnmatch("go2m.eu/*",($agent)))
 		$datei="$app_name.txt";
     $datei="data/$app_name.txt";
   }
-
+*/
 ?>
